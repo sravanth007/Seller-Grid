@@ -1,0 +1,156 @@
+
+<div id="custom-form">
+
+
+    <form class="form contact"
+
+
+          action="<?php echo $this->getUrl('seller/account/save', ['_secure' => true]); ?>"
+
+
+          id="custom-form" method="post"
+
+          data-hasrequired="<?php echo __('* Required Fields') ?>"
+
+
+          data-mage-init='{"validation":{}}'>
+
+
+
+
+
+        <fieldset class="fieldset">
+
+            <legend class="legend"><span><?php echo __("Seller form ") ?></span></legend>
+            <br/>
+
+
+            <div class="field name required">
+
+
+                <label class="label" for="first_name"><span><?php echo __('First Name') ?></span></label>
+
+
+                <div class="control">
+
+
+                    <input name="first_name" id="first_name" title="<?php echo __('First_Name') ?>" class="input-text" type="text"
+                           data-validate="{required:true}"/>
+
+
+                </div>
+
+
+            </div>
+             <div class="field name required">
+
+
+                <label class="label" for="last_name"><span><?php echo __('Last Name') ?></span></label>
+
+
+                <div class="control">
+
+
+                    <input name="last_name" id="last_name" title="<?php echo __('Last_Name') ?>" class="input-text" type="text"
+                           data-validate="{required:true}"/>
+
+
+                </div>
+
+
+            </div>
+
+
+            
+
+
+            <div class="field email required">
+
+
+                <label class="label" for="email"><span><?php echo __('Email') ?></span></label>
+
+
+                <div class="control">
+
+
+                    <input name="email" id="email" title="<?php echo __('Email') ?>" class="input-text" type="email"
+                           data-validate="{required:true, 'validate-email':true}"/>
+
+
+                </div>
+
+
+            </div>
+            <div class="field phone number required">
+
+
+                <label class="label" for="phone_number">
+              <span><?php echo __('Phone number') ?></span></label>
+
+
+                <div class="control"><input name="phone_number" id="phone_number" title="<?php echo __('Phone_number') ?>"
+                           class="input-text" type="text" data-validate="{required:true}"/>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <div class="field country ">
+
+
+                <label class="label" for="country"><span><?php echo __('Country') ?></span></label>
+
+
+                <div class="control">
+
+
+                    <input name="country" id="country" title="<?php echo __('Country') ?>" value="" class="input-text"
+                           type="text"/>
+
+
+                </div>
+
+
+                
+
+                </div>
+
+
+        </fieldset>
+
+
+        <div class="actions-toolbar">
+
+
+            <div class="primary">
+
+
+                <input type="hidden" name="hideit" id="hideit" value=""/>
+
+
+                <button type="submit" title="<?php echo __('Submit') ?>" class="action submit primary" id="custom_btn">
+
+
+
+                    <span><?php echo __('Submit') ?></span>
+
+
+                </button>
+
+
+            </div>
+
+
+        </div>
+
+
+    </form>
+
+
+</div>
+
+
